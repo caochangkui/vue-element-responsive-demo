@@ -1,4 +1,4 @@
-# vue3.0 + element 响应式后台模板
+# vue + element 响应式后台模板
 
 ## Project setup
 ```
