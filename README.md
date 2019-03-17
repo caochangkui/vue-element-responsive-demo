@@ -15,28 +15,26 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+## 主要功能
 
-### Run your unit tests
-```
-npm run test:unit
-```
+- 响应式侧边栏
+- 面包屑导航（结合router.js）
+- 路由动效
+- 阿里巴巴矢量icon引入
+- 公用样式
+- stylus预处理CSS
+- 路由懒加载
+- 路由拦截
+- axios请求拦截
+- vuex 状态分模块管理
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+另外，在以上基础上做了真实登录注册功能，参考：https://www.cnblogs.com/cckui/p/10536122.html
+- Koa2+MongoDB+Redis登录注册
+- 邮箱验证码服务
+
+
 
 ```
 // @ is an alias to /src
