@@ -1,0 +1,63 @@
+/* 渐隐渐现动效 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease;
+}
+/* .fade-enter, .fade-leave-to {
+  opacity: 0.1;
+} */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* containers/Full容器内微滑动 动效 */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .3s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+/* 返回顶部 */
+.slide-enter-active,.slide-leave-active {
+transition: all 0.2s;
+}
+.slide-enter,.slide-leave-to {
+transform: translate3d(0, 100px, 0);
+}
+
+/* 面包屑导航动画 */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .4s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .el-message-box {
+    max-width: 300px;
+  }
+}

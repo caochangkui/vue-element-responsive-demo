@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="caidan" unicode="&#58965;" d="M127.9 727.1h768v-46h-768zM127.2 86.9h768v-46h-768zM408.1 400.5h488.7v-46H408.1zM317.6 549.7L130.1 373.4l187.5-176.3V549.7z m-46-246.2l-74.3 69.9 74.3 69.9v-139.8z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="caidanzhankai" unicode="&#59176;" d="M104 832h815c22.091 0 40-17.909 40-40s-17.909-40-40-40H104c-22.091 0-40 17.909-40 40s17.909 40 40 40z m1-408h462c22.091 0 40-17.909 40-40s-17.909-40-40-40H105c-22.091 0-40 17.909-40 40s17.909 40 40 40z m0-408h815c22.091 0 40-17.909 40-40s-17.909-40-40-40H105c-22.091 0-40 17.909-40 40s17.909 40 40 40z m666.627 567.931l177.304-177.304c12.497-12.496 12.497-32.758 0-45.254L771.627 184.069c-12.496-12.497-32.758-12.497-45.254 0A32 32 0 0 0 717 206.696V561.304c0 17.673 14.327 32 32 32a32 32 0 0 0 22.627-9.373z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
