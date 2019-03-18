@@ -1,4 +1,4 @@
-# vue + element 响应式后台模板
+# vue3.0 + element 响应式后台模板
 
 ## Project setup
 ```
@@ -15,26 +15,28 @@ npm run serve
 npm run build
 ```
 
+### Run your tests
+```
+npm run test
+```
 
+### Lints and fixes files
+```
+npm run lint
+```
 
-## 主要功能
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
 
-- 响应式侧边栏
-- 面包屑导航（结合router.js）
-- 路由动效
-- 阿里巴巴矢量icon引入
-- 公用样式
-- stylus预处理CSS
-- 路由懒加载
-- 路由拦截
-- axios请求拦截
-- vuex 状态分模块管理
+### Run your unit tests
+```
+npm run test:unit
+```
 
-另外，在以上基础上做了真实登录注册功能，参考：https://www.cnblogs.com/cckui/p/10536122.html
-- Koa2+MongoDB+Redis登录注册
-- 邮箱验证码服务
-
-
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ```
 // @ is an alias to /src
@@ -49,3 +51,14 @@ html {
 }
 ```
 
+#### note
+---
+- koa-json 中间件，它会自动将返回的数据转换为json格式
+- "koa": "^2.7.0",
+  "koa-bodyparser": "^4.2.1",
+  "koa-generic-session": "^2.0.1",
+  "koa-json": "^2.0.2",
+  "koa-redis": "^3.1.3",
+  "koa-router": "^7.4.0",
+  "mongoose": "^5.4.19",
+  "nodemailer": "^5.1.1",

@@ -33,7 +33,7 @@ export default {
     }
   },
   created () {
-    // this.getAllUser()
+    this.getAllUser()
   },
   methods: {
     getAllUser () {

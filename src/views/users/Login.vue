@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import axios from '../../axios.js'
+import CryptoJS from 'crypto-js' // md5 加密
 import { mapMutations } from 'vuex'
 // import axios from 'axios'
 import Loading from '@/components/loading/Loading.vue'
@@ -86,19 +88,44 @@ export default {
     login(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          this.bindLogin(this.ruleForm.name)
-          this.saveUser(this.ruleForm.name)
-          this.$notify({
-            title: '成功',
-            message: '恭喜，登录成功。',
-            duration: 1000,
-            type: 'success'
+
+          axios.userLogin({
+            username: window.encodeURIComponent(this.ruleForm.name),
+            password: CryptoJS.MD5(this.ruleForm.pass).toString()
+          }).then((res) => {
+            console.log(res)
+            if (res.status === 200) {
+              if (res.data && res.data.code === 0) {
+                this.bindLogin(res.data.token)
+                this.saveUser(res.data.username)
+                this.$notify({
+                  title: '成功',
+                  message: '恭喜，登录成功。',
+                  duration: 1000,
+                  type: 'success'
+                })
+                setTimeout(() => {
+                  this.$router.push({
+                    path: '/'
+                  })
+                }, 500)
+              } else {
+                this.$notify({
+                  title: '错误',
+                  message: res.data.msg,
+                  duration: 1000,
+                  type: 'error'
+                })
+              }
+            } else {
+              this.$notify({
+                title: '错误',
+                message: '服务器出错，请稍后重试',
+                duration: 1000,
+                type: 'error'
+              })
+            }
           })
-          setTimeout(() => {
-            this.$router.push({
-              path: '/'
-            })
-          }, 500)
         }
       })
     },
