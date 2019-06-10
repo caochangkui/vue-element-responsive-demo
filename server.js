@@ -15,8 +15,6 @@ app.keys = ['keys', 'keyskeys']
 app.proxy = true
 app.use(
   session({
-    key: 'vueEle', // 前缀
-    prefix: 'vueEle:uid', // 前缀
     store: new Redis()
   })
 )

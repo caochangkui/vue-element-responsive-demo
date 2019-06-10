@@ -1011,7 +1011,7 @@ $ npm i nodemon
 
 
 ```
-$ nodemon server.js
+$ nodemon server.js  // 注意端口号是否与其他项目冲突
 ```
 
 
