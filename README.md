@@ -36,16 +36,5 @@ npm run build
 
 
 
-```
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
-html {
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-  font-size: 50px;
-  -webkit-tap-highlight-color: transparent;
-}
-```
+ 
 
