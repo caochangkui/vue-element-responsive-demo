@@ -17,7 +17,7 @@
     "element-ui": "^2.4.5",
     "js-cookie": "^2.2.0",
     "jsonwebtoken": "^8.5.0",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-generic-session": "^2.0.1",
