@@ -16,7 +16,7 @@
     "echarts": "^4.1.0",
     "element-ui": "^2.4.5",
     "js-cookie": "^2.2.0",
-    "jsonwebtoken": "^8.5.0",
+    "jsonwebtoken": "^9.0.0",
     "jspdf": "^1.5.3",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
